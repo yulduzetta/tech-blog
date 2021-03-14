@@ -1,0 +1,29 @@
+{{#if posts.length}}
+  <section>
+    <h2>
+      Your Dashboard
+    </h2>
+    <ul>
+      {{#each posts as |post|}}
+        <li>
+          <article class="post">
+            <div class="title">
+              <a href="/dashboard/edit/{{post.id}}">
+                {{title}}
+              </a>
+            </div>
+            <div class="meta">
+              {{format_date created_at}}
+            </div>
+          </article>
+      {{/each}}
+    </ul>
+  </section>
+{{/if}}
+<button
+  onclick="location.href = '/dashboard/add';"
+  id="add-post-btn"
+  class="float-left submit-button"
+>
+  New Post
+</button>

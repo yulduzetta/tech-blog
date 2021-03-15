@@ -22,8 +22,8 @@ function checkIfSessionIsActive() {
       });
     },
     // 31 * 100* 100, // 5.16 minuts (>session cookie max age)
-    6000
-  ); // 6 seconds
+    30010
+  ); 
 }
 
 checkIfSessionIsActive();

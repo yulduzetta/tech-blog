@@ -45,12 +45,7 @@ router.get("/edit/:id", withAuth, (req, res) => {
     where: {
       id: req.params.id,
     },
-    attributes: [
-      "id",
-      "content",
-      "title",
-      "created_at",
-    ],
+    attributes: ["id", "content", "title", "created_at"],
     include: [
       {
         model: User,
@@ -76,12 +71,11 @@ router.get("/edit/:id", withAuth, (req, res) => {
 });
 
 router.get("/add", withAuth, (req, res) => {
-  // check for a session and redirect to the homepage if one exists
-  if (!req.session.loggedIn) {
-    res.redirect("/login");
-    return;
-  }
+  // // check for a session and redirect to the homepage if one does not exist
+  // if (!req.session.loggedIn) {
+  //   res.redirect("/login");
+  //   return;
+  // }
   res.render("create-post", { loggedIn: true });
 });
-
 module.exports = router;

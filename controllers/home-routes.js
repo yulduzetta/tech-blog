@@ -59,12 +59,6 @@ router.get("/signup", (req, res) => {
   res.render("signup");
 });
 
-router.get("/", (req, res) => {
-  console.log(req.session);
-
-  // other logic...
-});
-
 router.get("/post/:id", (req, res) => {
   Post.findOne({
     where: { id: req.params.id },

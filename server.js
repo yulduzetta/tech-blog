@@ -10,14 +10,21 @@ const sequelize = require("./config/connection");
 const hbs = exphbs.create({ helpers });
 const SequelStore = require("connect-session-sequelize")(session.Store);
 
+// https://stackoverflow.com/questions/46630368/how-to-extend-express-session-timeout
+// setting maxAge and rolling:true ensures user's session invalidates after given period of inactivity (no response sent to the server)
 const sess = {
   secret: "Super secret secret",
-  cookie: {},
-  resave: false,
+  resave: true,
   saveUnitialized: true,
+  // https://stackoverflow.com/questions/46630368/how-to-extend-express-session-timeout
+  rolling: true, // <-- Set `rolling` to `true`
   store: new SequelStore({
     db: sequelize,
   }),
+  cookie: {
+    // maxAge: 30 * 100* 100, // 5min
+    maxAge: 5000, // 5 sec 
+  },
 };
 
 const app = express();

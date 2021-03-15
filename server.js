@@ -22,10 +22,9 @@ const sess = {
     db: sequelize,
   }),
   cookie: {
-    // maxAge: 30 * 100* 100, // 5min
-    maxAge: 30000, // 30 sec 
+    maxAge: 30000, // 30 sec
   },
-};  
+};
 
 const app = express();
 const PORT = process.env.PORT || 3001;

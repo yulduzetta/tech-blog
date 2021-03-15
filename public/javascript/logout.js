@@ -12,7 +12,7 @@ async function handleLogout() {
 function checkIfSessionIsActive() {
   setInterval(
     function () {
-      fetch("/api/session/").then((resp) => {
+      fetch("/api/session").then((resp) => {
         if (!resp.ok) {
           alert(
             "You've been logged out, please re-login to access your dashboard"

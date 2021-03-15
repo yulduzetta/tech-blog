@@ -23,9 +23,9 @@ const sess = {
   }),
   cookie: {
     // maxAge: 30 * 100* 100, // 5min
-    maxAge: 5000, // 5 sec 
+    maxAge: 30000, // 30 sec 
   },
-};
+};  
 
 const app = express();
 const PORT = process.env.PORT || 3001;

@@ -1,29 +1,23 @@
-<form class="signup-form">
-  <div>
-    <label for="username-signup">
-      username:
-    </label>
-    <input type="text" id="username-signup" />
-  </div>
-  <div>
-    <label for="email-signup">
-      email:
-    </label>
-    <input type="text" id="email-signup" />
-  </div>
-  <div>
-    <label for="password-signup">
-      password:
-    </label>
-    <input type="password" id="password-signup" />
-  </div>
-  <div>
-    <button type="submit">
-      signup
-    </button>
-  </div>
-</form>
-<a href="/login">
-  Log in instead
-</a>
+<div class="signup-container">
+    <div class="row">
+        <div class="col-md-offset-5 col-md-5 signup-form-wrapper">
+            <div class="form-signup">
+            <h4>Join us today!</h4>
+            <input type="text" id="username-signup" class="form-control input-sm chat-input" placeholder="username" />
+            </br>
+            <input type="text" id="email-signup" class="form-control input-sm chat-input" placeholder="email" />
+            </br>
+            <input type="password" id="password-signup" class="form-control input-sm chat-input" placeholder="password" />
+            </br>
+            <div class="wrapper">
+            <span class="group-btn">     
+                <a href="#" class="btn btn-primary btn-md" id="signup">sign up <i class="fas fa-user-plus"></i></a>
+            </span>
+            <a href="/login">Log in instead</a>
+            </div>
+            </div>        
+        </div>
+    </div>
+</div>
+
 <script src="/javascript/signup.js"></script>

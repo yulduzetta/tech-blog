@@ -3,8 +3,8 @@ async function saveFormHandler(event) {
   
     console.log("save button clicked");
   
-    const title = document.querySelector("[name='post-title']").value.trim();
-    const content = document.querySelector("[name='post-content']").value.trim();
+    const title = document.querySelector("#post-title").value.trim();
+    const content = document.querySelector("#content").value.trim();
     const id = window.location.toString().split("/")[
       window.location.toString().split("/").length - 1
     ];

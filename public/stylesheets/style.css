@@ -167,10 +167,6 @@ main {
   width: 300px;
 }
 
-.edit-post-form {
-  margin-bottom: 5%;
-}
-
 /* HOME */
 .col-sm-12 {
   padding: 15px;
@@ -276,8 +272,9 @@ form-signup body {
   font-size: medium;
 }
 
-/* NEW POST FORM */
-.new-post-form {
+/* NEW/EDIT POST FORM */
+.new-post-form,
+.edit-post-form {
   display: flex;
   flex-direction: column;
 }
@@ -294,6 +291,21 @@ form-signup body {
   background: #ffe6bdeb;
 }
 
+.edit-post-form #post-title {
+  width: 100% !important;
+  height: 50px;
+  background: white !important;
+  text-align: left;
+  font-style: italic;
+}
+
+.edit-post-form #content {
+  width: 100% !important;
+  height: 100px;
+  background: white;
+  font-style: italic;
+}
+
 .new-post-form {
   margin-top: 260px;
 }
@@ -306,23 +318,51 @@ form-signup body {
   font-size: large;
 }
 
-  /* MY DASHBOARD */
-  .my-post-card .card-header {
-    background: #f1cc5f !important;
-  }
+#edit-post-article a {
+  color: #f7c342;
+}
 
-  .my-dash {
-    margin-top: 25%;
-    margin-bottom: 10%;
-  }
+#edit-post-article {
+  margin-top: 25%;
+  background: radial-gradient(black, transparent);
+  padding: 30pt;
+}
 
-  .my-dash h2 a {
-    font-size: large;
-    color: maroon;
-    font-style: italic;
-  }
+.edit-btn-groups {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-  .my-dash .card-header {
-    display: flex;
-    flex-direction: column-reverse;
-  }
+.edit-btn-groups .delete-post-btn {
+  background-color: #800000e0;
+  color: #f7c342;
+  width: 25%;
+}
+
+.edit-btn-groups .save-post-btn {
+  background: #65a7a6e8;
+  color: #f7c342;
+  width: 50%;
+}
+
+/* MY DASHBOARD */
+.my-post-card .card-header {
+  background: #ffe6bdeb !important;
+}
+
+.my-dash {
+  margin-top: 25%;
+  margin-bottom: 10%;
+}
+
+.my-dash h2 a {
+  font-size: large;
+  color: maroon;
+  font-style: italic;
+}
+
+.my-dash .card-header {
+  display: flex;
+  flex-direction: column-reverse;
+}

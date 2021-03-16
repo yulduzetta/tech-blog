@@ -306,23 +306,23 @@ form-signup body {
   font-size: large;
 }
 
-/* MY DASHBOARD */
-.my-post-card .card-header {
-  background: #f1cc5f !important;
-}
+  /* MY DASHBOARD */
+  .my-post-card .card-header {
+    background: #f1cc5f !important;
+  }
 
-.my-dash {
-  margin-top: 25%;
-  margin-bottom: 10%;
-}
+  .my-dash {
+    margin-top: 25%;
+    margin-bottom: 10%;
+  }
 
-.my-dash h2 a {
-  font-size: large;
-  color: maroon;
-  font-style: italic;
-}
+  .my-dash h2 a {
+    font-size: large;
+    color: maroon;
+    font-style: italic;
+  }
 
-.my-dash .card-header {
-  display: flex;
-  flex-direction: column-reverse;
-}
+  .my-dash .card-header {
+    display: flex;
+    flex-direction: column-reverse;
+  }

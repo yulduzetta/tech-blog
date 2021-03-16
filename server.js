@@ -57,6 +57,6 @@ app.set("view engine", "handlebars");
 // as the database would need a way to understand that something has changed.
 // We'll have to do that a few times throughout this project,
 // so it's best to keep the {force: false} there for now.
-sequelize.sync({ force: false }).then(() => {
+sequelize.sync({ force: true }).then(() => {
   app.listen(PORT, () => console.log("Now listening to port " + PORT));
 });

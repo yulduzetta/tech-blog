@@ -85,13 +85,12 @@ form label {
   flex-direction: column;
 }
 
-header{
-  border-bottom: 2px solid lemonchiffon;
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1%;
-  background: #800000c2;
+  background: #00000087;
 }
 
 header h1 {
@@ -182,6 +181,7 @@ main {
   flex-direction: row;
   justify-content: space-between;
 }
+
 .card a {
   color: #ab5252 !important;
 }
@@ -191,16 +191,14 @@ main {
 }
 
 .card-body {
-  background: antiquewhite;
+  background: #ffe6bdeb;
 }
 
 /* LOGIN / SIGNUP*/
 @import url(http://fonts.googleapis.com/css?family=Roboto:400);
 .form-login body,
 form-signup body {
-  background-color: #fff;
   -webkit-font-smoothing: antialiased;
-  font: normal 14px Roboto, arial, sans-serif;
 }
 .login-container,
 .signup-container {
@@ -215,7 +213,7 @@ form-signup body {
 }
 .form-login,
 .form-signup {
-  background-color: #ededed;
+  margin-top: 130pt;
   padding-top: 10px;
   padding-bottom: 20px;
   padding-left: 20px;
@@ -248,4 +246,24 @@ form-signup body {
 .form-login .group-btn,
 .form-signup .group-btn {
   padding-bottom: 20pt;
+}
+
+.btn-primary {
+  background: #c1cec4 !important;
+  border-color: black !important;
+  color: black !important;
+  font-weight: bolder !important
+}
+
+.form-login .wrapper > a,
+.form-signup .wrapper > a {
+  color: black;
+  background: #65a7a6e8;
+  font-weight: bolder;
+  padding: 10px;
+}
+
+.help-text {
+  color: maroon !important;
+  font-size: medium;
 }

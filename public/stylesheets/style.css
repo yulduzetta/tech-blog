@@ -186,13 +186,17 @@ main {
   background: #c1cec4 !important;
 }
 
+.card-header .meta {
+  font-style: italic;
+}
+
 .card-header h4 a {
   color: maroon !important;
-  font-style: italic !important;
 }
 
 .card-body {
-  background: #ffe6bdeb;
+  color: white;
+  background: radial-gradient(black, transparent);
 }
 
 /* LOGIN / SIGNUP*/

@@ -192,6 +192,7 @@ main {
 
 .card-header h4 a {
   color: maroon !important;
+  font-style: italic !important;
 }
 
 .card-body {
@@ -297,7 +298,31 @@ form-signup body {
   margin-top: 260px;
 }
 
-.new-post-form .btn {
-  background-color: #800000e0 ;
+.new-post-form .btn,
+#add-post-btn {
+  background-color: #800000e0;
   color: #f7c342;
+  width: 100%;
+  font-size: large;
+}
+
+/* MY DASHBOARD */
+.my-post-card .card-header {
+  background: #f1cc5f !important;
+}
+
+.my-dash {
+  margin-top: 25%;
+  margin-bottom: 10%;
+}
+
+.my-dash h2 a {
+  font-size: large;
+  color: maroon;
+  font-style: italic;
+}
+
+.my-dash .card-header {
+  display: flex;
+  flex-direction: column-reverse;
 }

@@ -1,29 +1,31 @@
 {{#if posts.length}}
-  <section>
-    <h2>
-      Your Dashboard
-    </h2>
-    <ul>
+  <section class="my-dash">
+    <div class="row">
       {{#each posts as |post|}}
-        <li>
-          <article class="post">
-            <div class="title">
-              <a href="/dashboard/edit/{{post.id}}">
-                {{title}}
-              </a>
+        <div class="col-sm-3 my-post-card">
+          <div class="post">
+            <div class="header-wrapper card-header">
+              <div>
+                <h2>
+                  <a href="/dashboard/edit/{{post.id}}">
+                    {{title}}
+                  </a>
+                </h2>
+              </div>
+              <div class="meta">
+                {{format_date created_at}}
+              </div>
             </div>
-            <div class="meta">
-              {{format_date created_at}}
-            </div>
-          </article>
+          </div>
+        </div>
       {{/each}}
-    </ul>
+    </div>
   </section>
 {{/if}}
 <button
   onclick="location.href = '/dashboard/add';"
   id="add-post-btn"
-  class="float-left submit-button"
+  class="btn"
 >
-  New Post
+  ADD NEW POST
 </button>

@@ -172,6 +172,10 @@ main {
   padding: 15px;
 }
 
+.homepage-row {
+  margin-top: 23%;
+}
+
 .header-wrapper {
   display: flex;
   flex-direction: row;
@@ -183,11 +187,12 @@ main {
 }
 
 .card-header {
-  background: #c1cec4 !important;
+  background: #e5bb6de8 !important;
 }
 
 .card-header .meta {
   font-style: italic;
+  font-size: small;
 }
 
 .card-header h4 a {
@@ -195,8 +200,8 @@ main {
 }
 
 .card-body {
-  color: white;
-  background: radial-gradient(black, transparent);
+  background: #d6c19ef2;
+  color: #000;
 }
 
 /* LOGIN / SIGNUP*/
@@ -283,16 +288,17 @@ form-signup body {
   flex-direction: column;
 }
 
-.new-post-form #post-title {
+.new-post-form #post-title,
+.comment-form #content {
   width: 100% !important;
   height: 50px;
-  background: #c1cec4 !important;
+  background: white !important;
 }
 
 .new-post-form #content {
   width: 100% !important;
   height: 200px;
-  background: #ffe6bdeb;
+  background: white;
 }
 
 .edit-post-form #post-title {
@@ -315,11 +321,22 @@ form-signup body {
 }
 
 .new-post-form .btn,
-#add-post-btn {
+#add-post-btn,
+.comment-form .btn {
   background-color: #800000e0;
   color: #f7c342;
   width: 100%;
   font-size: large;
+}
+.comments-section {
+  font-style: italic;
+}
+
+.comment-form .btn {
+  padding: 20px;
+}
+.comment-form div {
+  margin-bottom: 0px;
 }
 
 #edit-post-article a {
@@ -351,10 +368,6 @@ form-signup body {
 }
 
 /* MY DASHBOARD */
-.my-post-card .card-header {
-  background: #ffe6bdeb !important;
-}
-
 .my-dash {
   margin-top: 25%;
   margin-bottom: 10%;
@@ -363,10 +376,23 @@ form-signup body {
 .my-dash h2 a {
   font-size: large;
   color: maroon;
-  font-style: italic;
 }
 
 .my-dash .card-header {
   display: flex;
   flex-direction: column-reverse;
 }
+
+/* COMMENTS */
+.comments-section .card-header{
+  background-color: #bfd0ef8c !important;
+}
+
+.comments-section .card-body{
+  background-color: #cac9c9bd !important;
+}
+
+.comments-section>div {
+  margin: 15px 0 15px 0;
+}
+

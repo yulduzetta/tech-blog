@@ -8,17 +8,21 @@ Because arrays don't have named properties like objects do,
 we're forced to access the array as 'this'. 
 And so, by using this, we loop over 'this' and look for properties on each object from the array, in this case -- comment.
 }}
-<div class="comments">
+<div class="comments-section row">
   {{#each this}}
-    <section class="comment">
-      <div class="meta">
-        {{user.username}}
-        on
-        {{format_date created_at}}
+    <div class="col-sm-4">
+      <div class="header-wrapper card-header">
+        <div class="meta">
+          {{user.username}}
+          on
+          {{format_date created_at}}
+        </div>
       </div>
-      <div class="text">
-        {{comment_text}}
+      <div class="card-body">
+        <div class="card-text">
+          "{{comment_text}}"
+        </div>
       </div>
-    </section>
+    </div>
   {{/each}}
 </div>

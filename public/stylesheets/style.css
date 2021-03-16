@@ -25,7 +25,7 @@ a:hover {
 }
 
 nav a {
-  font-size: 28px;
+  font-size: 20px;
   text-decoration: none;
   color: darkgoldenrod !important;
 }
@@ -190,6 +190,12 @@ main {
   background: #c1cec4 !important;
 }
 
+.card-header h4 a{
+  color: maroon !important;
+}
+
+
+
 .card-body {
   background: #ffe6bdeb;
 }
@@ -226,11 +232,13 @@ form-signup body {
 
 .form-login h4,
 .form-signup h4 {
-  border: 0 solid #fff;
+  font-size: xsx-large;
   border-bottom-width: 1px;
-  padding-bottom: 10px;
   text-align: center;
   padding-top: 20pt;
+}
+#username-signup, #email-login{
+  margin-top: 20px;
 }
 
 .form-login .form-control,

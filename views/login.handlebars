@@ -1,23 +1,21 @@
-<form class="login-form">
-  <div>
-    <label for="email-login">
-      email:
-    </label>
-    <input type="text" id="email-login" />
-  </div>
-  <div>
-    <label for="password-login">
-      password:
-    </label>
-    <input type="password" id="password-login" />
-  </div>
-  <div>
-    <button type="submit">
-      login
-    </button>
-  </div>
-</form>
-<a href="/signup">
-  Sign up instead
-</a>
+<div class="loggin-container">
+    <div class="row">
+        <div class="col-md-offset-5 col-md-5 login-form-wrapper">
+            <div class="form-login">
+            <h4>Welcome back</h4>
+            <input type="text" id="email-login" class="form-control input-sm chat-input" placeholder="email" />
+            </br>
+            <input type="password" id="password-login" class="form-control input-sm chat-input" placeholder="password" />
+            </br>
+            <div class="wrapper">
+            <span class="group-btn">     
+                <a href="#" class="btn btn-primary btn-md">login <i class="fa fa-sign-in"></i></a>
+            </span>
+            <a href="/signup">Sign up instead</a>
+            </div>
+            </div>
+        
+        </div>
+    </div>
+</div>
 <script src="/javascript/login.js"></script>

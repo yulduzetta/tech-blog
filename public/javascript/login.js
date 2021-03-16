@@ -16,7 +16,7 @@ async function loginFormHandler(event) {
     if (response.ok) {
       document.location.replace("/dashboard");
     } else {
-      alert("Incorrect username or password");
+      alert("Incorrect email or password");
       document.location.reload();
     }
   } else if (!password || !email) {

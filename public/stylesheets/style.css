@@ -1,25 +1,33 @@
 * {
   box-sizing: border-box;
+  font-family: "Newsreader", sans-serif;
 }
 
-body,
-html {
+body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: sans-serif;
   color: #333;
+  background-image: url("../assets/background.jpeg");
+  background-size: cover;
+}
+main h1 {
+  text-align: center;
 }
 
 a {
-  text-decoration: none;
-  color: #225ca3;
-  font-weight: bold;
+  font-weight: 300 !important;
   transition: color 0.1s;
 }
 
 a:hover {
   color: #3486eb;
+}
+
+nav a {
+  font-size: 28px;
+  text-decoration: none;
+  color: darkgoldenrod !important;
 }
 
 button {
@@ -77,12 +85,13 @@ form label {
   flex-direction: column;
 }
 
-header {
-  border-bottom: 1px solid #ccc;
+header{
+  border-bottom: 2px solid lemonchiffon;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1%;
+  background: #800000c2;
 }
 
 header h1 {
@@ -163,15 +172,6 @@ main {
   margin-bottom: 5%;
 }
 
-footer {
-  border-top: 1px solid #ccc;
-  display: flex;
-  justify-content: center;
-  padding: 1%;
-  font-size: 110%;
-  text-align: center;
-}
-
 /* HOME */
 .col-sm-12 {
   padding: 15px;
@@ -182,24 +182,39 @@ footer {
   flex-direction: row;
   justify-content: space-between;
 }
+.card a {
+  color: #ab5252 !important;
+}
+
+.card-header {
+  background: #c1cec4 !important;
+}
+
+.card-body {
+  background: antiquewhite;
+}
 
 /* LOGIN / SIGNUP*/
 @import url(http://fonts.googleapis.com/css?family=Roboto:400);
-.form-login body, form-signup body {
+.form-login body,
+form-signup body {
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
   font: normal 14px Roboto, arial, sans-serif;
 }
-.login-container, .signup-container  {
+.login-container,
+.signup-container {
   padding-top: 10%;
   padding-bottom: 10%;
 }
 
-.login-form-wrapper, .signup-form-wrapper {
+.login-form-wrapper,
+.signup-form-wrapper {
   margin: 0 auto;
   width: 80%; /* value of your choice which suits your alignment */
 }
-.form-login, .form-signup {
+.form-login,
+.form-signup {
   background-color: #ededed;
   padding-top: 10px;
   padding-bottom: 20px;
@@ -211,7 +226,8 @@ footer {
   box-shadow: 0 1px 0 #cfcfcf;
 }
 
-.form-login h4, .form-signup h4 {
+.form-login h4,
+.form-signup h4 {
   border: 0 solid #fff;
   border-bottom-width: 1px;
   padding-bottom: 10px;
@@ -219,14 +235,17 @@ footer {
   padding-top: 20pt;
 }
 
-.form-login .form-control, .form-signup .form-control {
+.form-login .form-control,
+.form-signup .form-control {
   border-radius: 10px;
 }
 
-.form-login .wrapper, .form-signup .wrapper {
+.form-login .wrapper,
+.form-signup .wrapper {
   text-align: center;
 }
 
-.form-login .group-btn, .form-signup .group-btn {
+.form-login .group-btn,
+.form-signup .group-btn {
   padding-bottom: 20pt;
 }

@@ -190,11 +190,9 @@ main {
   background: #c1cec4 !important;
 }
 
-.card-header h4 a{
+.card-header h4 a {
   color: maroon !important;
 }
-
-
 
 .card-body {
   background: #ffe6bdeb;
@@ -237,7 +235,8 @@ form-signup body {
   text-align: center;
   padding-top: 20pt;
 }
-#username-signup, #email-login{
+#username-signup,
+#email-login {
   margin-top: 20px;
 }
 
@@ -260,7 +259,7 @@ form-signup body {
   background: #c1cec4 !important;
   border-color: black !important;
   color: black !important;
-  font-weight: bolder !important
+  font-weight: bolder !important;
 }
 
 .form-login .wrapper > a,
@@ -274,4 +273,31 @@ form-signup body {
 .help-text {
   color: maroon !important;
   font-size: medium;
+}
+
+/* NEW POST FORM */
+.new-post-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-post-form #post-title {
+  width: 100% !important;
+  height: 50px;
+  background: #c1cec4 !important;
+}
+
+.new-post-form #content {
+  width: 100% !important;
+  height: 200px;
+  background: #ffe6bdeb;
+}
+
+.new-post-form {
+  margin-top: 260px;
+}
+
+.new-post-form .btn {
+  background-color: #800000e0 ;
+  color: #f7c342;
 }
